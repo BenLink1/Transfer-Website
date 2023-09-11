@@ -4,8 +4,8 @@
 		<title>Centre Transfer Credits</title>  
 	</head>  
 	<body> 
-    <header style="background-color: yellow;height: 150px;;"><h1 style="text-align: center;">Centre College</h1></header>
-    <div class="left" style="float:left;width: 500px;height: 500px;"> 
+    <header style="background-color: yellow;height: 150px;"><h1 style="text-align: center;">Centre College</h1></header>
+    <div class="left" style="float:left;width: 500px;height: 900px;"> 
       <div class="info" style="height: 400px;">
         <h1>Info</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Scelerisque eleifend donec pretium vulputate. Congue nisi vitae suscipit tellus mauris a diam maecenas sed. Pulvinar mattis nunc sed blandit libero volutpat. Pellentesque elit eget gravida cum sociis. Nunc sed blandit libero volutpat sed cras. Amet est placerat in egestas erat imperdiet sed euismod nisi. Aliquam ultrices sagittis orci a scelerisque purus semper eget. Vulputate eu scelerisque felis imperdiet proin fermentum. Dui vivamus arcu felis bibendum ut tristique et egestas quis. Nulla pellentesque dignissim enim sit.</p>
@@ -50,39 +50,41 @@
       </div>
     </div>
     <div class="right" style="float:right;width: 1200px;height: 500px;margin-right: 150px;margin-top: 50px;">
-      <h1>Institutions</h1>
+      <a href="homepage.html"><img src="back-arrow.png" style="height: 40px;width: 40px;display: inline;"></a>
+      <h1 style="display: inline;">Hogwarts Transferrable Credits</h1>
       <div class="search">
         <form>
-          <input type="text" placeholder="Institution Search">
+          <input type="text" placeholder="Search">
           <input type="submit">
         </form>
       </div>
-      <div class="school-list">
+      <div class="course-list">
+        <form id="saved-list"></form>
+        <input type="submit" form="saved-list" style="display: inline;float: right" value="Add to List">
         <table>
           <tr>
-            <th>Institution</th>
-            <th>City</th>
-            <th>State</th>
+            <th style="width: 800px;">Transferring Institution Course</th>
+            <th>Centre Course</th>
+            <th>Transfer Credits</th>
+            <th><input type="checkbox" form="saved-list"></th>
           </tr>
           <tr>
-            <td>Transylvania University</td>
-            <td>Lexington</td>
-            <td>KY</td>
+            <td>First Year Potions</td>
+            <td>CHE 117</td>
+            <td>4</td>
+            <td><input type="checkbox" form="saved-list"></td>
           </tr>
           <tr>
-            <td>Vanderbilt University</td>
-            <td>Nashville</td>
-            <td>TN</td>
+            <td>Herbology 2</td>
+            <td>BIO 110</td>
+            <td>3</td>
+            <td><input type="checkbox" form="saved-list"></td>
           </tr>
           <tr>
-            <td style="width:1000px"><a href=hogwarts_courses.html>Hogwarts School of Witchcraft and Wizardry</a></td>
-            <td>???</td>
-            <td>Scotland</td>
-          </tr>
-          <tr>
-            <td>Jefferson Community and Technical College</td>
-            <td>Louisville</td>
-            <td>KY</td>
+            <td>Muggle Studies</td>
+            <td>SOC 110</td>
+            <td>3</td>
+            <td><input type="checkbox" form="saved-list"></td>
           </tr>
         </table>
       </div>
