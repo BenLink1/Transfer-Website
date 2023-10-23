@@ -20,9 +20,24 @@ function App() {
         alert('Thank you for submitting!');
 
         setInstitutionName('');
-        setSyllabusFile(null); //FIXED THIS PLEASE
+        setSyllabusFile(null); //FIXED THIS PLEASE ;-;
         setDepartment('CSC');
     };
+
+    const handleFile = (e) => {
+        const holder = e.target.files[0];
+
+        //This is checking for file is pdf I have to search online how to do this
+        if (holder.type != 'application/pdf') {
+            alert("ENTER PDF PLEASE");
+
+            e.target.value = '';
+
+        }
+        else {
+            setDepartment(holder);
+        }
+    }
 
     return (
         <div class="box">
@@ -42,7 +57,7 @@ function App() {
                     id="fsyllabus"
                     className="fsyllabus"
                     name="fsyllabus"
-                    onChange={e => setSyllabusFile(e.target.files[0]) }/><br />
+                    onChange={handleFile}/><br />
             <label htmlFor="fdepartment"><b>Enter 3 letter Code for the department at Centre to which you're hoping to transfer credit: </b></label>
                 <select name="fdepartment"
                     id="fdepartment"
